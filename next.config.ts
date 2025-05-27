@@ -1,14 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  theme: {
-    extend: {
-      colors: {
-        "brand-light": "#FFDFBF",
-        "brand-orange": "#F6891E",
-      },
-    },
+  transpilePackages: ["framer-motion"],
+  webpack: (config) => {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+    };
+    return config;
   },
 };
 

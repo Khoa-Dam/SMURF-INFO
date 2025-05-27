@@ -1,0 +1,83 @@
+.triangle-card::after {
+  content: "";
+  position: absolute;
+  bottom: 45px;
+  right: 23px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-90deg);
+  background-color: #f79b00;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  z-index: 13;
+}
+
+.triangle-card::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 22px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(90deg);
+  background-color: #f79b00;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  z-index: 15;
+}
+
+@media screen and (max-width: 768px) {
+  .triangle-card::after {
+    bottom: 35px;
+    right: 15px;
+  }
+  .triangle-card::before {
+    top: 20px;
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .triangle-card::after {
+    bottom: 50px;
+    right: 24px;
+  }
+  .triangle-card::before {
+    top: 32px;
+    left: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .triangle-card::before {
+    top: 17px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+  }
+  .triangle-card::after {
+    bottom: 31px;
+    right: 14px;
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .triangle-card::before {
+    top: 40px;
+    left: 30px;
+  }
+  .triangle-card::after {
+    bottom: 55px;
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .triangle-card::before {
+    top: 55px;
+    left: 35px;
+  }
+  .triangle-card::after {
+    bottom: 70px;
+    right: 35px;
+  }
+}
