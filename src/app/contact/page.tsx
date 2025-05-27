@@ -1,23 +1,35 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between text-[#FFDFBF] p-10">
-      <h1 className="text-4xl sm:text-5xl translate-y-8 translate-x-10 font-semibold">
+    <div className="flex flex-col lg:flex-row justify-between text-[#FFDFBF] sm:p-8">
+      <motion.h1
+        className="text-4xl sm:text-3xl lg:text-4xl xl:text-5xl sm:translate-y-8 sm:translate-x-10 font-semibold text-center sm:text-left"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+      >
         Let&apos;s Create <br />
         Something crazy <br />
         Together.
-      </h1>
-      <div className="flex flex-col gap-3 translate-y-15 translate-x-10 lg:translate-y-8 lg:-translate-x-10 ">
+      </motion.h1>
+      <motion.div
+        className="flex flex-col gap-3 sm:translate-y-15 sm:translate-x-10 lg:translate-y-8 lg:-translate-x-10 "
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
         <div
-          className="flex flex-col bg-black/50 p-10 relative backdrop-filter backdrop-blur-3xl"
+          className="flex flex-col bg-black/70 p-10 relative backdrop-filter backdrop-blur-3xl"
           style={{
             clipPath:
               "polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)",
           }}
         >
-          <div className="relative z-10 flex flex-col gap-5 font-semibold">
-            <h1 className="text-4xl  mb-10">
+          <div className="relative z-10 flex flex-col gap-5 ">
+            <h1 className="text-4xl sm:text-5xl mb-10">
               Enter your
               <br /> contact details
             </h1>
@@ -62,7 +74,7 @@ const ContactPage: React.FC = () => {
         >
           SEND MESSAGE
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };

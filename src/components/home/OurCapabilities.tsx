@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const OurCapabilities = () => {
   return (
@@ -7,7 +9,12 @@ const OurCapabilities = () => {
         OUR CAPABILITIES
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-0">
-        <div className="w-full h-full relative flex flex-col items-center justify-center">
+        <motion.div
+          className="w-full h-full relative flex flex-col items-center justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.1 }}
+        >
           <Image
             src="/svg/frame-capability.svg"
             alt="line"
@@ -32,8 +39,13 @@ const OurCapabilities = () => {
               that balance gameplay enjoyment and economic sustainability.
             </p>
           </div>
-        </div>
-        <div className="w-full h-full relative flex flex-col items-center justify-center">
+        </motion.div>
+        <motion.div
+          className="w-full h-full relative flex flex-col items-center justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
           <Image
             src="/svg/frame-capability.svg"
             alt="line"
@@ -58,11 +70,16 @@ const OurCapabilities = () => {
               ecosystems to maximize accessibility and adoption.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-0">
         <div className="hidden lg:block"></div>
-        <div className="w-full h-full relative flex flex-col items-center justify-center">
+        <motion.div
+          className="w-full h-full relative flex flex-col items-center justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           <Image
             src="/svg/frame-capability.svg"
             alt="line"
@@ -88,8 +105,13 @@ const OurCapabilities = () => {
               content that drives organic adoption.
             </p>
           </div>
-        </div>
-        <div className="w-full h-full relative flex flex-col items-center justify-center">
+        </motion.div>
+        <motion.div
+          className="w-full h-full relative flex flex-col items-center justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
           <Image
             src="/svg/frame-capability.svg"
             alt="line"
@@ -114,7 +136,7 @@ const OurCapabilities = () => {
               ecosystems to maximize accessibility and adoption.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

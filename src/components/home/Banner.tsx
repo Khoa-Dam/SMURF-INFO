@@ -17,14 +17,24 @@ const Banner = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
     >
+      {/* Desktop video container */}
       <div
-        className="h-[700px] translate-y-[-50px] z-1 w-full hidden md:block bg-[url('/images/banner/bg-banner.png')] bg-cover bg-center"
+        className="h-[700px] translate-y-[-50px] z-1 w-full hidden md:block relative"
         style={{
           clipPath:
             "polygon(0 0, 35% 0, 40% 6%, 65% 6%, 70% 0, 100% 0, 100% 90%, 95% 100%, 0 100%)",
         }}
       >
-        <div className="flex justify-center mt-4 md:absolute md:bottom-0 md:left-0 md:translate-x-[80px] md:translate-y-[-200px]">
+        <video
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          src="/images/banner/video-banner2.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          typeof="video/mp4"
+        ></video>
+        <div className="flex justify-center mt-4 md:absolute md:bottom-0 md:left-0 md:translate-x-[80px] md:translate-y-[-200px] relative z-10">
           {/* Container for Image (relative positioning context for text) */}
           <div className="relative w-full max-w-sm h-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
             <Image
@@ -46,10 +56,19 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      {/* Mobile container for the animation and text block */}
-      <div className="md:hidden flex justify-center mt-4 md:absolute md:bottom-0 md:left-0 md:translate-x-[80px] md:translate-y-[-10px]">
+      {/* Mobile video container */}
+      <div className="md:hidden flex justify-center mt-4 md:absolute md:bottom-0 md:left-0 md:translate-x-[80px] md:translate-y-[-10px] relative">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/videos/bg-banner.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          typeof="video/mp4"
+        ></video>
         {/* Container for Image (relative positioning context for text) */}
-        <div className="relative w-full max-w-sm h-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
+        <div className="relative w-full max-w-sm h-auto sm:max-w-md md:max-w-lg lg:max-w-xl relative z-10">
           <Image
             src="/svg/animation.svg"
             alt="banner"

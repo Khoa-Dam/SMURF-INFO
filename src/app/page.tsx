@@ -24,19 +24,37 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ amount: 0.3 }}
       >
         <div className="w-full 2xl:w-[1380px]">
-          <h1 className="text-center text-4xl mb-5">WHAT IS SMURF</h1>
-          <Image
-            src="/svg/line.svg"
-            alt="what-is-smurf"
-            width={1000}
-            height={1000}
-            className="w-full"
-          />
+          <motion.h1
+            className="text-center text-4xl mb-5"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            WHAT IS SMURF
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Image
+              src="/svg/line.svg"
+              alt="what-is-smurf"
+              width={1000}
+              height={1000}
+              className="w-full"
+            />
+          </motion.div>
         </div>
-        <div className="flex flex-row w-full 2xl:w-[1380px] mt-10">
+        <motion.div
+          className="flex flex-row w-full 2xl:w-[1380px] mt-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Image
             src="/images/smurf/WHAT-IS-SMURF.png"
             alt="what-is-smurf"
@@ -70,7 +88,7 @@ export default function Home() {
               <ArrowUpRight className="w-5 h-5" />
             </Link>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
       <motion.div
         className="w-full max-w-[2536px] mx-auto relative p-2 overflow-hidden mt-[150px]"
@@ -84,23 +102,10 @@ export default function Home() {
         </h1>
         <OurProject />
       </motion.div>
-      <motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <OurCapabilities />
-      </motion.div>
+
+      <OurCapabilities />
       {/* <OurTeam /> */}
-      <motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <OurNetwork />
-      </motion.div>
+      <OurNetwork />
       <motion.div
         variants={sectionVariants}
         initial="hidden"

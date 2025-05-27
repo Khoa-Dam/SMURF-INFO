@@ -1,4 +1,6 @@
+"use client";
 import Card from "./Card";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -55,8 +57,15 @@ const data = [
 const OurProject = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full ">
-      {data.map((project) => (
-        <Card key={project.id} data={project} />
+      {data.map((project, index) => (
+        <motion.div
+          key={project.id}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+          <Card data={project} />
+        </motion.div>
       ))}
     </div>
   );
