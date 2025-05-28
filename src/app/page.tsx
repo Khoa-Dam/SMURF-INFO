@@ -26,7 +26,7 @@ export default function Home() {
         whileInView="visible"
         viewport={{ amount: 0.3 }}
       >
-        <div className="w-full 2xl:w-[1380px]">
+        <div className="w-full ">
           <motion.h1
             className="text-center text-4xl mb-5"
             initial={{ opacity: 0, y: 50 }}
@@ -50,7 +50,7 @@ export default function Home() {
           </motion.div>
         </div>
         <motion.div
-          className="flex flex-row w-full 2xl:w-[1380px] mt-10"
+          className="flex flex-row w-full mt-10"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -60,14 +60,14 @@ export default function Home() {
             alt="what-is-smurf"
             width={500}
             height={300}
-            className="hidden xl:block"
+            className="hidden xl:block max-w-[500px] max-h-[500px]"
           />
-          <div className="flex flex-col  ml-5 max-w-[900px]">
+          <div className="flex flex-col ml-5 gap-0">
             <div className="mb-20">
-              <h3 className="text-3xl mb-5">
+              <h3 className="text-3xl 2xl:text-4xl mb-5">
                 SMURF Ecosystem: Empowering the Future of VietNam Web3 Gaming
               </h3>
-              <p className="text-brand-light ">
+              <p className="text-brand-light 2xl:text-3xl">
                 SMURF is a dynamic Web3 gaming ecosystem that merges blockchain
                 technology, GameFi, and community-driven value creation.
                 Originally founded as a gaming guild, SMURF has evolved into a
@@ -83,7 +83,10 @@ export default function Home() {
               </p>
             </div>
 
-            <Link href="/" className="flex flex-row gap-2 text-3xl">
+            <Link
+              href="/"
+              className="flex flex-row gap-2 text-3xl 2xl:text-4xl"
+            >
               Read more
               <ArrowUpRight className="w-5 h-5" />
             </Link>

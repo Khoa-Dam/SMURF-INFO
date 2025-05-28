@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-// Define animation variants for the network section
 const networkVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -39,9 +38,11 @@ const OurNetwork = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <h1 className="text-center text-4xl font-semibold">OUR NETWORK</h1>
+      <h1 className="text-center text-2xl sm:text-4xl 2xl:text-6xl font-semibold">
+        OUR NETWORK
+      </h1>
       <div className=" w-full">
-        <div className="w-full relative text-brand-light">
+        <div className="w-full relative ">
           <Image
             src="/images/networks/background.png"
             alt=""
@@ -50,16 +51,30 @@ const OurNetwork = () => {
             className="w-full h-full object-cover"
           />
           {/* Network 1 */}
-          <motion.div
-            className="absolute top-0 left-0 w-1/4 h-1/4 flex flex-col justify-center items-center translate-x-[45%] translate-y-[60%]"
-            variants={robotVariants}
-            initial="hidden"
-            whileInView="visible"
-            animate="float"
-          >
+          <div className="absolute top-0 left-0 w-1/4 h-1/4 flex flex-col justify-center items-center translate-x-[45%] translate-y-[60%]">
             <div className="w-full h-full -translate-y-1/2 z-10">
+              <div className="relative w-1/3 h-1/3 translate-x-[100%] translate-y-[20%] z-11">
+                <p className="w-[300%] relative text-[7px] sm:text-xl md:text-sm lg:text-base xl:text-2xl 2xl:text-3xl font-semibold z-12 -translate-x-1/3 -translate-y-10/12  text-center">
+                  SMURF STUDIO
+                </p>
+                <motion.div
+                  className="w-full h-full relative z-12 -translate-y-[30%]"
+                  variants={robotVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  animate="float"
+                >
+                  <Image
+                    src="/images/networks/ruby.png"
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </motion.div>
+              </div>
+
               <Image
-                src="/images/networks/network-1.png"
+                src="/images/networks/network.png"
                 alt=""
                 fill
                 className="object-contain z-10"
@@ -72,18 +87,32 @@ const OurNetwork = () => {
               fill
               className="object-contain"
             />
-          </motion.div>
+          </div>
           {/* Network 2 */}
-          <motion.div
-            className="absolute top-0 right-0 w-1/4 h-1/4 flex flex-col justify-center items-center -translate-x-[25%] translate-y-[70%]"
-            variants={robotVariants}
-            initial="hidden"
-            whileInView="visible"
-            animate="float"
-          >
+          <div className="absolute top-0 right-0 w-1/4 h-1/4 flex flex-col justify-center items-center -translate-x-[25%] translate-y-[70%]">
             <div className="w-full h-full -translate-y-1/2 z-10">
+              <div className="relative w-1/3 h-1/3 translate-x-[100%] translate-y-[20%] z-11">
+                <p className="w-[300%] relative text-[7px] sm:text-xl md:text-sm lg:text-sm xl:text-2xl 2xl:text-3xl font-semibold z-12 -translate-x-1/3  -translate-y-[95%] md:-translate-x-[30%] text-center">
+                  SMURF LAB
+                </p>
+                <motion.div
+                  className="w-full h-full relative z-12 -translate-y-[30%]"
+                  variants={robotVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  animate="float"
+                >
+                  <Image
+                    src="/images/networks/ruby.png"
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </motion.div>
+              </div>
+
               <Image
-                src="/images/networks/network-2.png"
+                src="/images/networks/network.png"
                 alt=""
                 fill
                 className="object-contain z-10"
@@ -96,37 +125,69 @@ const OurNetwork = () => {
               fill
               className="object-contain"
             />
-          </motion.div>
+          </div>
           {/* Network 3 */}
-          <motion.div
-            className="absolute bottom-0 left-0 w-1/4 h-1/4 flex flex-col justify-center items-center translate-x-1/3 -translate-y-2/3"
-            variants={robotVariants}
-            initial="hidden"
-            whileInView="visible"
-            animate="float"
-          >
+          <div className="absolute bottom-0 left-0 w-1/4 h-1/4 flex flex-col justify-center items-center translate-x-1/3 -translate-y-2/3">
+            <div className="w-full h-full -translate-y-1/12 z-11">
+              <div className="relative w-1/3 h-1/3 translate-x-[100%] translate-y-[50%] z-11">
+                <p className="w-[300%] relative text-[7px] sm:text-2xl md:text-sm lg:text-base xl:text-2xl 2xl:text-3xl font-semibold z-12 -translate-x-1/3 -translate-y-[95%] md:-translate-x-1/3 text-center">
+                  SMURF Gaming
+                  <br />
+                  Guild
+                </p>
+                <motion.div
+                  className="w-full h-full relative z-12 -translate-y-[70%]"
+                  variants={robotVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  animate="float"
+                >
+                  <Image
+                    src="/images/networks/ruby.png"
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </motion.div>
+              </div>
+            </div>
             <Image
-              src="/images/networks/network-3.png"
+              src="/images/networks/network.png"
               alt=""
               fill
               className="object-contain z-10"
             />
-          </motion.div>
+          </div>
           {/* Network 4 */}
-          <motion.div
-            className="absolute bottom-0 right-0 w-1/4 h-1/4 flex flex-col justify-center items-center -translate-x-1/3 -translate-y-2/3"
-            variants={robotVariants}
-            initial="hidden"
-            whileInView="visible"
-            animate="float"
-          >
+          <div className="absolute bottom-0 right-0 w-1/4 h-1/4 flex flex-col justify-center items-center -translate-x-1/3 -translate-y-2/3">
+            <div className="w-full h-full -translate-y-1/12 z-11">
+              <div className="relative w-1/3 h-1/3 translate-x-[100%] translate-y-[50%] z-11">
+                <p className="w-[300%] relative text-[7px] sm:text-2xl md:text-sm lg:text-base xl:text-2xl 2xl:text-3xl font-semibold z-12 -translate-x-1/3 -translate-y-[95%] md:-translate-x-1/3 text-center">
+                  WEb3 HUB
+                </p>
+                <motion.div
+                  className="w-full h-full relative z-12 -translate-y-[30%]"
+                  variants={robotVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  animate="float"
+                >
+                  <Image
+                    src="/images/networks/ruby.png"
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </motion.div>
+              </div>
+            </div>
             <Image
-              src="/images/networks/network-4.png"
+              src="/images/networks/network.png"
               alt=""
               fill
               className="object-contain z-10"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </motion.div>

@@ -2,6 +2,7 @@
 @import "../styles/Home.css";
 @import "../styles/Banner.css";
 @import "../styles/Card.css";
+@import "../styles/OurCapabilities.css";
 :root {
   --background: #ffffff;
   --foreground: #171717;

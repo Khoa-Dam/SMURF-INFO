@@ -22,7 +22,10 @@ const Header = () => {
   return (
     <motion.header initial="hidden" animate="visible" variants={headerVariants}>
       <div className="flex items-center justify-between z-2 relative md:bg-transparent ">
-        <Link href="/" className="px-4 lg:px-20  md:translate-y-[20px]">
+        <Link
+          href="/"
+          className="px-4 lg:px-20  md:translate-y-[20px] sm:translate-y-[20px]"
+        >
           <Image
             src="/images/logo/SMURF.png"
             alt="Smurf Dashboard"
@@ -32,7 +35,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10 uppercase bg-transparent ml-4 transition-colors ">
+        <div className="hidden md:flex md:gap-5 lg:gap-10 uppercase bg-transparent ml-4 transition-colors ">
           <Link
             href="/"
             className={`hover:text-[#f6891e] transition-colors duration-200 ${
@@ -62,7 +65,7 @@ const Header = () => {
         {/* Desktop LET'S TALK button */}
         <Link
           href="/"
-          className="hidden md:flex md:flex-row md:text-sm lg:text-base items-center bg-[#f6891e] px-5 h-10 font-semibold mr-20 ml-20 sm:translate-y-[20px] "
+          className="hidden md:flex md:flex-row md:text-sm lg:text-[14px] items-center bg-[#f6891e] px-5 h-10 font-semibold mr-20 ml-20 sm:translate-y-[20px] "
           style={{
             clipPath:
               "polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%)",

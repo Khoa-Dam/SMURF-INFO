@@ -26,10 +26,10 @@ const OurCapabilities = () => {
             <p className="text-xl sm:text-2xl lg:text-[30px] xl:text-5xl 2xl:text-5xl text-[#484848] sm:mb-2">
               01
             </p>
-            <h1 className="text-sm sm:text-sm lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
+            <h1 className="text-sm sm:text-sm md:text-[20px] lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
               Web3 Game Development & Publishing
             </h1>
-            <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] text-brand-light ">
+            <p className="capabilities-text text-brand-light ">
               - Built for Web3: We create engaging blockchain games that
               integrate NFTs, token economies, and play-to-earn mechanics.
               <br />
@@ -57,10 +57,10 @@ const OurCapabilities = () => {
             <p className="text-xl sm:text-2xl lg:text-[30px] xl:text-5xl 2xl:text-5xl text-[#484848] sm:mb-2">
               02
             </p>
-            <h1 className="text-sm sm:text-sm lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
+            <h1 className="text-sm sm:text-sm  lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
               Blockchain Technology & Infrastructure
             </h1>
-            <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] text-brand-light ">
+            <p className="capabilities-text text-brand-light ">
               - Move & EVM Compatibility: Leveraging Movement blockchain for
               scalable and secure transactions.
               <br />
@@ -91,10 +91,10 @@ const OurCapabilities = () => {
             <p className="text-xl sm:text-2xl lg:text-[30px] xl:text-5xl 2xl:text-5xl text-[#484848] sm:mb-2">
               03
             </p>
-            <h1 className="text-sm sm:text-sm lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
+            <h1 className="text-sm sm:text-sm  lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
               Community & Ecosystem Growth
             </h1>
-            <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] text-brand-light ">
+            <p className="capabilities-text text-brand-light ">
               - Gaming Guild Expertise: Originating as a Vietnamese Web3 gaming
               guild, we understand how to build, engage, and scale crypto gaming
               communities.
@@ -123,10 +123,10 @@ const OurCapabilities = () => {
             <p className="text-xl sm:text-2xl lg:text-[30px] xl:text-5xl 2xl:text-5xl text-[#484848] sm:mb-2">
               04
             </p>
-            <h1 className="text-sm sm:text-sm lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
+            <h1 className="text-sm sm:text-sm  lg:text-[15px] xl:text-2xl 2xl:text-4xl text-brand-orange sm:mb-5">
               Web3 Business Development
             </h1>
-            <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[15px] 2xl:text-[18px] text-brand-light ">
+            <p className="capabilities-text text-brand-light ">
               - Move & EVM Compatibility: Leveraging Movement blockchain for
               scalable and secure transactions.
               <br />

@@ -48,7 +48,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Enter address"
-                className="w-full p-2 pr-10 border-b-2  border-[#FFDFBF] bg-transparent text-brand-light placeholder:text-brand-light/70"
+                className="w-full p-2 pr-10 border-b-1  border-[#FFDFBF] bg-transparent text-brand-light placeholder:text-brand-light/70 focus:outline-none"
               />
               <ArrowUpRight className="absolute right-1 cursor-pointer text-brand-light" />
             </div>

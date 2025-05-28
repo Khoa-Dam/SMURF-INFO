@@ -19,15 +19,15 @@ const Banner = () => {
     >
       {/* Desktop video container */}
       <div
-        className="h-[700px] translate-y-[-50px] z-1 w-full hidden md:block relative"
+        className="hidden md:block h-[700px]  translate-y-[-50px] z-1 w-full relative"
         style={{
           clipPath:
             "polygon(0 0, 35% 0, 40% 6%, 65% 6%, 70% 0, 100% 0, 100% 90%, 95% 100%, 0 100%)",
         }}
       >
         <video
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          src="/images/banner/video-banner2.mp4"
+          className="absolute inset-0 w-full h-full object-cover bg-cover bg-center"
+          src="/images/banner/video.mp4"
           autoPlay
           loop
           muted
@@ -57,31 +57,30 @@ const Banner = () => {
         </div>
       </div>
       {/* Mobile video container */}
-      <div className="md:hidden flex justify-center mt-4 md:absolute md:bottom-0 md:left-0 md:translate-x-[80px] md:translate-y-[-10px] relative">
-        <video
+      <div className="md:hidden flex justify-center mt-4 md:absolute md:bottom-0 md:left-0 md:translate-x-[80px] md:translate-y-[-10px] relative h-[500px]">
+        {/* Replaced video with image for mobile background */}
+        <Image
           className="absolute inset-0 w-full h-full object-cover"
-          src="/videos/bg-banner.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          typeof="video/mp4"
-        ></video>
+          src="/images/banner/bg-banner2.png"
+          alt="Mobile banner background"
+          layout="fill"
+          objectFit="cover"
+        />
         {/* Container for Image (relative positioning context for text) */}
-        <div className="relative w-full max-w-sm h-auto sm:max-w-md md:max-w-lg lg:max-w-xl relative z-10">
-          <Image
-            src="/svg/animation.svg"
-            alt="banner"
-            width={550}
-            height={600}
-            className="w-full h-auto"
-          />
+        <div className="relative w-full max-w-sm h-auto sm:max-w-md md:max-w-lg lg:max-w-xl  z-10">
           {/* Text div (absolute, centered over image) */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full px-4">
-            <h1 className="text-sm sm:text-base md:text-xl lg:text-3xl font-semibold text-brand-orange">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full px-4">
+            <Image
+              src="/svg/animation.svg"
+              alt="banner"
+              width={550}
+              height={600}
+              className="w-full h-auto translate-y-[50px]"
+            />
+            <h1 className="text-4xl lg:text-3xl font-semibold text-brand-orange">
               WE ARE SMURF
             </h1>
-            <p className="text-xs sm:text-sm md:text-base text-brand-orange max-w-xs mx-auto">
+            <p className="text-xl  text-brand-orange text-start max-w-xs ">
               Super Movement Unleashing Revolution Future
             </p>
           </div>
