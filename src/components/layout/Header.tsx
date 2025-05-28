@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <motion.header initial="hidden" animate="visible" variants={headerVariants}>
-      <div className="flex  justify-between z-2 relative md:bg-transparent ">
+      <div className="flex items-center  justify-between z-2 relative md:bg-transparent ">
         <Link
           href="/"
           className="px-4 lg:px-20  md:translate-y-[20px] sm:translate-y-[20px] items-center justify-center"
