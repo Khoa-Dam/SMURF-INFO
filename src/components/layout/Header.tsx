@@ -21,10 +21,10 @@ const Header = () => {
 
   return (
     <motion.header initial="hidden" animate="visible" variants={headerVariants}>
-      <div className="flex items-center justify-between z-2 relative md:bg-transparent ">
+      <div className="flex  justify-between z-2 relative md:bg-transparent ">
         <Link
           href="/"
-          className="px-4 lg:px-20  md:translate-y-[20px] sm:translate-y-[20px]"
+          className="px-4 lg:px-20  md:translate-y-[20px] sm:translate-y-[20px] items-center justify-center"
         >
           <Image
             src="/images/logo/SMURF.png"
@@ -90,10 +90,10 @@ const Header = () => {
           isMenuOpen ? "right-0" : "right-[-100%]"
         } w-full h-screen bg-black/95 z-100 transition-right duration-300 ease-in-out md:hidden`}
       >
-        <div className="flex flex-col items-center justify-center h-full p-8 gap-8">
+        <div className="flex flex-col items-center justify-between h-full p-8 gap-8">
           <Link
             href="/"
-            className={`text-2xl font-medium text-[#ffdfbf] no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
+            className={`flex justify-center text-2xl font-medium text-[#ffdfbf] no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
               pathname === "/" ? "text-[#f6891e]" : ""
             }`}
             onClick={toggleMenu}
@@ -107,8 +107,8 @@ const Header = () => {
           </Link>
           <Link
             href="/"
-            className={`text-2xl font-medium text-[#ffdfbf] no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
-              pathname === "/" ? "text-[#f6891e]" : ""
+            className={`text-2xl font-medium no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
+              pathname === "/" ? "text-[#f6891e]" : "text-[#ffdfbf]"
             }`}
             onClick={toggleMenu}
           >
@@ -116,8 +116,8 @@ const Header = () => {
           </Link>
           <Link
             href="/project"
-            className={`text-2xl font-medium text-[#ffdfbf] no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
-              pathname === "/project" ? "text-[#f6891e]" : ""
+            className={`text-2xl font-medium no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
+              pathname === "/project" ? "text-[#f6891e]" : "text-[#ffdfbf]"
             }`}
             onClick={toggleMenu}
           >
@@ -125,8 +125,8 @@ const Header = () => {
           </Link>
           <Link
             href="/contact"
-            className={`text-2xl font-medium text-[#ffdfbf] no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
-              pathname === "/contact" ? "text-[#f6891e]" : ""
+            className={`text-2xl font-medium no-underline uppercase text-center transition-colors duration-300 ease-in-out ${
+              pathname === "/contact" ? "text-[#f6891e]" : "text-[#ffdfbf]"
             }`}
             onClick={toggleMenu}
           >

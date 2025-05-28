@@ -35,6 +35,7 @@ const Footer = () => {
             alt="Smurf Dashboard"
             width={200}
             height={200}
+            className="items-start"
           />
         )}
 
