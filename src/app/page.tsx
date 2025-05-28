@@ -67,7 +67,7 @@ export default function Home() {
               <h3 className="text-3xl 2xl:text-4xl mb-5">
                 SMURF Ecosystem: Empowering the Future of VietNam Web3 Gaming
               </h3>
-              <p className="text-brand-light 2xl:text-3xl">
+              <p className="text-brand-light 2xl:text-2xl">
                 SMURF is a dynamic Web3 gaming ecosystem that merges blockchain
                 technology, GameFi, and community-driven value creation.
                 Originally founded as a gaming guild, SMURF has evolved into a
