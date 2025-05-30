@@ -57,7 +57,7 @@ const OurRoadmap = () => {
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <div className="w-full mb-5">
         <motion.h1
@@ -65,6 +65,7 @@ const OurRoadmap = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
         >
           OUR ROADMAP
         </motion.h1>
@@ -72,6 +73,7 @@ const OurRoadmap = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <Image
             src="/svg/line.svg"
@@ -91,6 +93,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/ruby.png"
@@ -107,6 +110,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/ruby.png"
@@ -123,6 +127,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/ruby.png"
@@ -139,6 +144,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/ruby.png"
@@ -155,6 +161,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/ruby.png"
@@ -169,6 +176,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/ruby.png"
@@ -184,6 +192,7 @@ const OurRoadmap = () => {
           initial="hidden"
           whileInView="visible"
           animate="float"
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/fly.png"

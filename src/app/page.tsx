@@ -24,7 +24,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <div className="w-full ">
           <motion.h1
@@ -32,6 +32,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
           >
             WHAT IS SMURF
           </motion.h1>
@@ -39,6 +40,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
           >
             <Image
               src="/svg/line.svg"
@@ -54,6 +56,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <Image
             src="/images/smurf/WHAT-IS-SMURF.png"
@@ -113,7 +116,7 @@ export default function Home() {
         variants={sectionVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <div className="w-full ">
           <motion.h1
@@ -122,7 +125,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            SMURF NFT
+            NFT
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -143,6 +146,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <div className="flex flex-col ml-5 gap-0">
             <div className="mb-15">
@@ -168,7 +172,7 @@ export default function Home() {
               <ArrowUpRight className="w-5 h-5" />
             </Link>
           </div>
-          <video
+          {/* <video
             className="hidden md:block sm:max-w-[300px] sm:max-h-[300px]  md:min-w-[500px]  md:max-h-[500px] "
             src="/images/smurf/NFT.mp4"
             autoPlay
@@ -176,7 +180,14 @@ export default function Home() {
             muted
             playsInline
             typeof="video/mp4"
-          ></video>
+          ></video> */}
+          <Image
+            src="/images/smurf/NFT2.png"
+            alt="what-is-smurf"
+            width={500}
+            height={500}
+            className="hidden md:block sm:max-w-[300px] sm:max-h-[300px]  md:min-w-[500px]  md:max-h-[500px] "
+          />
         </motion.div>
       </motion.div>
       <OurRoadmap />

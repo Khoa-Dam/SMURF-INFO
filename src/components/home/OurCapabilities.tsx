@@ -14,6 +14,7 @@ const OurCapabilities = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1 }}
+          viewport={{ once: true }}
         >
           <Image
             src="/svg/frame-capability.svg"
@@ -45,6 +46,7 @@ const OurCapabilities = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <Image
             src="/svg/frame-capability.svg"
@@ -79,6 +81,7 @@ const OurCapabilities = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <Image
             src="/svg/frame-capability.svg"
@@ -111,6 +114,7 @@ const OurCapabilities = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: true }}
         >
           <Image
             src="/svg/frame-capability.svg"
